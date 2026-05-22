@@ -202,6 +202,23 @@ h1 {
   object-fit: cover;
 }
 
+.category__cover--gallery {
+  min-height: 18rem;
+}
+
+.category__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 18rem;
+}
+
+.category__gallery img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+}
+
 .category__shade {
   position: absolute;
   inset: 0;

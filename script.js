@@ -18,7 +18,18 @@ const categories = [
     id: "drinks",
     label: "Drinks",
     title: "Drinks Menu",
-    image: "assets/drinks-section.webp",
+    images: [
+      "assets/drinks-01.jpg",
+      "assets/drinks-02.jpg",
+      "assets/drinks-03.jpg",
+      "assets/drinks-04.jpg",
+      "assets/drinks-05.jpg",
+      "assets/drinks-06.jpg",
+      "assets/drinks-07.jpg",
+      "assets/drinks-08.jpg",
+      "assets/drinks-09.jpg",
+      "assets/drinks-10.jpg",
+    ],
     subCategories: [
       {
         title: "Hot Drinks",
@@ -345,19 +356,35 @@ function renderSubCategory(subCategory) {
   `;
 }
 
+function renderCategoryCover(category) {
+  const coverMedia = category.images
+    ? `
+        <div class="category__gallery">
+          ${category.images
+            .map((image, index) => `<img src="${image}" alt="${category.title} photo ${index + 1}" loading="lazy" />`)
+            .join("")}
+        </div>
+      `
+    : `<img src="${category.image}" alt="${category.title}" loading="lazy" />`;
+
+  return `
+    <div class="category__cover${category.images ? " category__cover--gallery" : ""}">
+      ${coverMedia}
+      <div class="category__shade"></div>
+      <div class="category__title">
+        <h2>${category.title}</h2>
+        ${category.note ? `<p>${category.note}</p>` : ""}
+      </div>
+    </div>
+  `;
+}
+
 function renderMenu() {
   menu.innerHTML = categories
     .map(
       (category) => `
         <section class="category reveal" id="${category.id}">
-          <div class="category__cover">
-            <img src="${category.image}" alt="${category.title}" loading="lazy" />
-            <div class="category__shade"></div>
-            <div class="category__title">
-              <h2>${category.title}</h2>
-              ${category.note ? `<p>${category.note}</p>` : ""}
-            </div>
-          </div>
+          ${renderCategoryCover(category)}
           ${category.subCategories.map(renderSubCategory).join("")}
         </section>
       `
