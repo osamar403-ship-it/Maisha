@@ -186,7 +186,7 @@ const categories = [
     label: "Pizza",
     title: "Italian Napoli Pizza",
     note: "Everyday from 4pm - 10pm",
-    image: "assets/pizza-section.webp",
+    image: "assets/pizza-section.png",
     subCategories: [
       {
         title: "Our Pizzas",
