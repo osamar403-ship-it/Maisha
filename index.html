@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House Menu Preview</title>
+    <meta
+      name="description"
+      content="A mobile-friendly coffee house menu with drinks, breakfast, bakery, and pizza sections." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Josefin+Sans:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <img class="hero__image" src="assets/hero-coffee.webp" alt="Coffee and pastries on a cafe table" />
+        <div class="hero__fade"></div>
+        <div class="hero__brand">
+          <span class="logo-frame logo-frame--large">
+            <img class="logo" src="assets/maishas-logo-cropped.jpg" alt="Maisha's logo" />
+          </span>
+          <h1>Our Menu</h1>
+          <span class="title-rule"></span>
+        </div>
+      </header>
+
+      <nav class="category-nav" aria-label="Menu categories">
+        <div class="category-nav__scroller" id="categoryNav"></div>
+      </nav>
+
+      <main class="menu" id="menuContent"></main>
+
+      <footer class="footer">
+        <span class="logo-frame logo-frame--small">
+          <img class="logo" src="assets/maishas-logo-cropped.jpg" alt="Maisha's logo" />
+        </span>
+        <p class="footer__name">Maisha's</p>
+        <p class="footer__tagline">Breakfast &amp; Bakery</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
