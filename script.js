@@ -1,6 +1,8 @@
 const iconPaths = {
   drinks:
     '<path d="M8 2h8l-.7 8.7a4.3 4.3 0 0 1-8.6 0L6 2Z"/><path d="M5 22h14"/><path d="M10 14.5V22"/><path d="M14 14.5V22"/>',
+  seasonal:
+    '<path d="M12 3c2.8 2.3 4.2 4.7 4.2 7.3A4.2 4.2 0 0 1 12 14.5a4.2 4.2 0 0 1-4.2-4.2C7.8 7.7 9.2 5.3 12 3Z"/><path d="M6 16h12"/><path d="M8 21h8"/><path d="M9 16l1 5"/><path d="M15 16l-1 5"/>',
   breakfast:
     '<path d="M4 11h16"/><path d="M6 11V8a6 6 0 0 1 12 0v3"/><path d="M7 11v7a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-7"/>',
   bakery:
@@ -65,6 +67,46 @@ const categories = [
           { name: "Shot", price: "0.5 jd" },
           { name: "Non-Dairy Milk", price: "0.5 jd" },
           { name: "Flavor", price: "0.5 jd" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "seasonal",
+    label: "Seasonal Drinks",
+    title: "Seasonal Drinks",
+    note: "Refreshing lavender and rose specials",
+    image: "assets/seasonal-drinks-section.png",
+    theme: "seasonal",
+    subCategories: [
+      {
+        title: "Refreshing Drinks",
+        items: [
+          {
+            name: "Rose Ice Latte",
+            price: "3.5 jd",
+            description: "Chilled espresso and milk with rose syrup for a soft floral finish",
+          },
+          {
+            name: "Lavender Lemonade",
+            price: "2/4 jd",
+            description: "Fresh lemonade with lavender syrup, served cold over ice",
+          },
+          {
+            name: "Lavender Milkshake",
+            price: "3.5 jd",
+            description: "Creamy vanilla milkshake blended with lavender syrup",
+          },
+          {
+            name: "Lavender Milk",
+            price: "3 jd",
+            description: "Cold milk mixed with lavender syrup for a smooth sweet drink",
+          },
+          {
+            name: "Lavender Ice Latte",
+            price: "3.5 jd",
+            description: "Chilled espresso, milk, and lavender syrup served over ice",
+          },
         ],
       },
     ],
@@ -349,7 +391,7 @@ function renderMenu() {
   menu.innerHTML = categories
     .map(
       (category) => `
-        <section class="category reveal" id="${category.id}">
+        <section class="category${category.theme ? ` category--${category.theme}` : ""} reveal" id="${category.id}">
           <div class="category__cover">
             <img src="${category.image}" alt="${category.title}" loading="lazy" />
             <div class="category__shade"></div>

@@ -176,6 +176,16 @@ h1 {
   box-shadow: 0 8px 18px rgba(212, 131, 142, 0.28);
 }
 
+.tab-button[data-target="seasonal"] {
+  color: #7c559f;
+}
+
+.tab-button[data-target="seasonal"].is-active {
+  background: linear-gradient(135deg, #8761b2, #b781d1);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(135, 97, 178, 0.32);
+}
+
 .menu {
   width: min(100%, 32rem);
   margin: 0 auto;
@@ -226,6 +236,33 @@ h1 {
   color: rgba(255, 255, 255, 0.82);
   font-size: 0.82rem;
   font-style: italic;
+}
+
+.category--seasonal {
+  padding: 0.7rem 0.4rem 0.25rem;
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 88% 0%, rgba(221, 184, 255, 0.42), transparent 12rem),
+    linear-gradient(180deg, rgba(247, 237, 255, 0.78), rgba(253, 242, 240, 0));
+}
+
+.category--seasonal .category__cover {
+  border: 1px solid rgba(167, 119, 205, 0.34);
+  box-shadow: 0 16px 38px rgba(116, 80, 148, 0.2);
+}
+
+.category--seasonal .category__shade {
+  background: linear-gradient(0deg, rgba(70, 38, 96, 0.78), rgba(126, 88, 166, 0.26) 58%, transparent);
+}
+
+.category--seasonal .subcategory h3,
+.category--seasonal .menu-item__price {
+  color: #7c559f;
+}
+
+.category--seasonal .subcategory h3,
+.category--seasonal .menu-item {
+  border-color: rgba(178, 132, 211, 0.34);
 }
 
 .subcategory {
