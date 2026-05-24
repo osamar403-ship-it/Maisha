@@ -73,7 +73,7 @@ const categories = [
     id: "breakfast",
     label: "Breakfast",
     title: "Breakfast Menu",
-    image: "assets/breakfast-section.webp",
+    image: "assets/breakfast-section.png",
     subCategories: [
       {
         title: "Toasties",
