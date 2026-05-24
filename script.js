@@ -335,6 +335,11 @@ const categories = [
             price: "3.5 jd",
             description: "With fresh greens, dates, and house dressing",
           },
+          {
+            name: "Mexican Salad",
+            price: "3.5 jd",
+            description: "With fresh greens, beans, corn, vegetables, and creamy white sauce",
+          },
         ],
       },
     ],
