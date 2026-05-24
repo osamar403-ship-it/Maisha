@@ -278,7 +278,7 @@ const categories = [
     label: "Salads",
     title: "Salads Menu",
     note: "Everyday from 4pm - 10pm",
-    image: "assets/salads-section.jpg",
+    image: "assets/salads-section.png",
     subCategories: [
       {
         title: "Salads",
