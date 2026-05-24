@@ -232,7 +232,7 @@ const categories = [
     label: "Pasta",
     title: "Pasta Menu",
     note: "Everyday from 4pm - 10pm",
-    image: "assets/pasta-section.jpg",
+    image: "assets/pasta-section.png",
     subCategories: [
       {
         title: "Pasta",
