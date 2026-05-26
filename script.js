@@ -26,6 +26,7 @@ const categories = [
         title: "Hot Drinks",
         items: [
           { name: "Espresso", price: "2/2.5 jd" },
+          { name: "Lungo", price: "2/2.5 jd" },
           { name: "Americano", price: "3 jd" },
           { name: "Latte", price: "3 jd" },
           { name: "Cappuccino", price: "3 jd" },
@@ -39,17 +40,24 @@ const categories = [
           { name: "Regular Tea", price: "2/4 jd" },
           { name: "Turtle Green Tea", price: "3 jd" },
           { name: "Golden Winter Latte", price: "3.5 jd" },
+          { name: "Chai Latte", price: "3 jd" },
         ],
       },
       {
         title: "Cold Drinks",
         items: [
           { name: "Iced Americano", price: "3 jd" },
+          { name: "Iced Flat White", price: "3 jd" },
           { name: "Iced Latte", price: "3 jd" },
           { name: "Frappe", price: "3 jd" },
           { name: "Iced Spanish Latte", price: "3.5 jd" },
           { name: "Iced Mocha", price: "3.5 jd" },
-          { name: "Milkshake", price: "3.5 jd" },
+          { name: "Iced Spicy Mocha", price: "3.5 jd" },
+          { name: "Milkshake", price: "3.5/4 jd" },
+          {
+            name: "Milkshake Flavors",
+            description: "Choose Chocolate, Vanilla, Oreo, Honey Cornflakes, or Lavender",
+          },
           { name: "Iced Tea", price: "3 jd" },
           { name: "Smoothies", price: "2/4 jd" },
           { name: "Lemonade", price: "2/4 jd" },
@@ -109,6 +117,31 @@ const categories = [
           },
         ],
       },
+      {
+        title: "Winter Drinks",
+        items: [
+          {
+            name: "Sahlab",
+            price: "2.5 jd",
+            description: "Warm milk drink with a soft creamy texture and cozy winter spices",
+          },
+          {
+            name: "Gingerbread Latte",
+            price: "3.5 jd",
+            description: "Espresso and steamed milk with sweet gingerbread spice",
+          },
+          {
+            name: "Toasted Marshmallow Latte",
+            price: "3.5 jd",
+            description: "Espresso and milk with toasted marshmallow sweetness",
+          },
+          {
+            name: "After Eight",
+            price: "3 jd",
+            description: "Chocolate and mint drink inspired by the classic after-dinner flavor",
+          },
+        ],
+      },
     ],
   },
   {
@@ -159,6 +192,16 @@ const categories = [
           },
         ],
       },
+      {
+        title: "Chia Pudding Jar",
+        items: [
+          {
+            name: "Chia Pudding Jar",
+            price: "3.5/4 jd",
+            description: "Chia pudding topped with fresh fruits",
+          },
+        ],
+      },
     ],
   },
   {
@@ -188,6 +231,7 @@ const categories = [
           { name: "Turkey & Cheese", price: "3 jd" },
           { name: "Halloumi & Pesto", price: "3 jd" },
           { name: "Eggs / Eggs with Cheese", price: "3 jd" },
+          { name: "Tiramisu Croissant", price: "3.5 jd" },
         ],
       },
       {
@@ -214,6 +258,8 @@ const categories = [
           { name: "Tiramisu Jar", price: "3.5/4 jd" },
           { name: "Brownie", price: "2.25 jd" },
           { name: "Red Velvet Cake", price: "3.5 jd" },
+          { name: "Pina Colada Pudding", price: "3.5 jd" },
+          { name: "Coffee Pudding", price: "2.5 jd" },
           { name: "Swiss Roll Cake", price: "3.5 jd" },
           { name: "Espresso Cheesecake", price: "3.5 jd" },
         ],
@@ -254,6 +300,11 @@ const categories = [
             name: "Vegetariana Pizza",
             price: "5.5 jd",
             description: "With tomato sauce, Italian mozzarella, seasonal vegetables",
+          },
+          {
+            name: "Margarita Pizza",
+            price: "5.5 jd",
+            description: "With tomato sauce, Italian mozzarella, and fresh basil",
           },
         ],
       },
