@@ -117,31 +117,6 @@ const categories = [
           },
         ],
       },
-      {
-        title: "Winter Drinks",
-        items: [
-          {
-            name: "Sahlab",
-            price: "2.5 jd",
-            description: "Warm milk drink with a soft creamy texture and cozy winter spices",
-          },
-          {
-            name: "Gingerbread Latte",
-            price: "3.5 jd",
-            description: "Espresso and steamed milk with sweet gingerbread spice",
-          },
-          {
-            name: "Toasted Marshmallow Latte",
-            price: "3.5 jd",
-            description: "Espresso and milk with toasted marshmallow sweetness",
-          },
-          {
-            name: "After Eight",
-            price: "3 jd",
-            description: "Chocolate and mint drink inspired by the classic after-dinner flavor",
-          },
-        ],
-      },
     ],
   },
   {
