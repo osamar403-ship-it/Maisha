@@ -267,11 +267,6 @@ const categories = [
             description: "With tomato sauce, Italian mozzarella, mushrooms",
           },
           {
-            name: "Pepperoni Pizza",
-            price: "5.5 jd",
-            description: "With tomato sauce, Italian mozzarella, pepperoni",
-          },
-          {
             name: "Vegetariana Pizza",
             price: "5.5 jd",
             description: "With tomato sauce, Italian mozzarella, seasonal vegetables",
