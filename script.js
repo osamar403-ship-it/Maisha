@@ -90,22 +90,22 @@ const categories = [
           {
             name: "Lavender Lemonade",
             price: "2/4 jd",
-            description: "Fresh lemonade with lavender syrup, served cold over ice",
+            description: "Fresh lemonade with lavender homemade syrup, served cold over ice",
           },
           {
             name: "Lavender Milkshake",
             price: "3.5 jd",
-            description: "Creamy vanilla milkshake blended with lavender syrup",
+            description: "Creamy vanilla milkshake blended with lavender homemade syrup",
           },
           {
             name: "Lavender Milk",
             price: "3 jd",
-            description: "Cold milk mixed with lavender syrup for a smooth sweet drink",
+            description: "Cold milk mixed with lavender homemade syrup for a smooth sweet drink",
           },
           {
             name: "Lavender Ice Latte",
             price: "3.5 jd",
-            description: "Chilled espresso, milk, and lavender syrup served over ice",
+            description: "Chilled espresso, milk, and lavender homemade syrup served over ice",
           },
         ],
       },
@@ -121,10 +121,10 @@ const categories = [
         title: "Toasties",
         items: [
           {
-            name: "Walnut Toasts",
+            name: "Toasts",
             price: "3.5/4 jd",
             description:
-              "Walnut toasts with your choice of toppings: Halloumi & pesto, Eggs, Feta / Feta chilli, Labneh, Zait & zaatar, Cream cheese, Jam & butter, Peanut butter, Chocolate",
+              "Toasts with your choice of toppings: Halloumi & pesto, Eggs, Feta / Feta chilli, Labneh, Zait & zaatar, Cream cheese, Jam & butter, Peanut butter, Chocolate",
           },
         ],
       },
@@ -188,15 +188,12 @@ const categories = [
           { name: "Turkey & Cheese", price: "3 jd" },
           { name: "Halloumi & Pesto", price: "3 jd" },
           { name: "Eggs / Eggs with Cheese", price: "3 jd" },
-          { name: "Cookie Roll", price: "1.75 jd" },
-          { name: "Bow Tie", price: "2.25 jd" },
         ],
       },
       {
         title: "Savory Bites",
         items: [
           { name: "Thyme & Cheese Sweet Dough", price: "0.6 jd" },
-          { name: "Turkish Cheese Pastry", price: "0.75 jd" },
         ],
       },
       {
