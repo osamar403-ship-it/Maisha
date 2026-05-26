@@ -53,10 +53,10 @@ const categories = [
           { name: "Iced Spanish Latte", price: "3.5 jd" },
           { name: "Iced Mocha", price: "3.5 jd" },
           { name: "Iced Spicy Mocha", price: "3.5 jd" },
-          { name: "Milkshake", price: "3.5/4 jd" },
           {
-            name: "Milkshake Flavors",
-            description: "Choose Chocolate, Vanilla, Oreo, Honey Cornflakes, or Lavender",
+            name: "Milkshake",
+            price: "3.5/4 jd",
+            description: "Flavors: Chocolate / Vanilla / Oreo / Lavender / Honey Cornflakes",
           },
           { name: "Iced Tea", price: "3 jd" },
           { name: "Smoothies", price: "2/4 jd" },
